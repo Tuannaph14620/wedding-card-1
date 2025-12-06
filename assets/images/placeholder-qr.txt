@@ -1,0 +1,8 @@
+Placeholder for QR codes
+Generate QR codes for bank accounts:
+- qr-groom.png
+- qr-bride.png
+Recommended size: 400x400px
+
+You can use online QR generator:
+https://www.qr-code-generator.com/

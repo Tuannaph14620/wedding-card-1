@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Cưới - Xuân Huy & Cẩm Nhung</title>
+    <meta name="description" content="Trân trọng kính mời bạn tới dự lễ thành hôn của chúng tôi">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading">
+        <div class="loading-content">
+            <div class="heart-animation">
+                <i class="fas fa-heart"></i>
+            </div>
+            <p>Đang tải thiệp...</p>
+        </div>
+    </div>
+
+    <!-- Music Control -->
+    <button id="musicToggle" class="music-toggle">
+        <i class="fas fa-music"></i>
+    </button>
+    <audio id="bgMusic" loop>
+        <source src="assets/music/wedding-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="hero-section">
+        <img src="assets/images/hero-bg (2).JPG" alt="hero-bg" class="hero-bg">
+        <div class="hero-content">
+            <div class="couple-names-main">
+                <p class="cursive-name">Xuân Huy</p>
+                <span class="heart-divider"><i class="fas fa-heart"></i></span>
+                <p class="cursive-name">Cẩm Nhung</p>
+            </div>
+            <div class="wedding-info">
+                <p class="time">11:15</p>
+                <p class="date">29 . 11 . 2025</p>
+                <p class="venue">Tại</p>
+                <p class="venue-name">Khách sạn Mường Thanh Con Cuông</p>
+                <p class="address">Khối 2 - Xã Con Cuông - tỉnh Nghệ An</p>
+            </div>
+        </div>
+        <div class="hero-actions">
+            <a href="https://maps.app.goo.gl/2Paq88DtQHQiLwkY9" target="_blank" class="btn">
+                <span class="instruction">Bản đồ</span>
+                <i class="fa-solid fa-map"></i>
+            </a>
+            <a href="#rsvp" class="btn">
+                <span class="instruction">Đăng ký tham gia</span>
+                <i class="fa-solid fa-bookmark"></i></a>
+            <a href="#gift" class="btn">
+                <span class="instruction">Quà tặng</span>
+                <i class="fa-solid fa-gift"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. THÔNG TIN CÔ DÂU CHÚ RỂ -->
+    <section id="couple" class="couple-section">
+        <div class="container">
+            <div class="couple-grid">
+                <!-- Chú Rể -->
+                <div class="couple-card groom-card">
+                    <div class="couple-photo">
+                        <img src="assets/images/groom.jpg" alt="Trần Xuân Huy">
+                        <span class="label">Nhà trai<img src="assets/images/men-icon.png" alt="men-icon"></span>
+                    </div>
+                    <div class="couple-info">
+                        <h2 class="couple-name">Trần Xuân Huy</h2>
+                        <div class="parents-info">
+                            <p class="parents-label">Ông Bà</p>
+                            <p class="parent-name">Trần Xuân Dũng</p>
+                            <p class="parent-name">Vi Thị Duyên</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cô Dâu -->
+                <div class="couple-card bride-card">
+                    <div class="couple-photo">
+                        <img src="assets/images/bride.jpg" alt="Bùi Cẩm Nhung">
+                        <span class="label">Nhà gái<img src="assets/images/wm-icon.png" alt="men-icon"></span>
+                    </div>
+                    <div class="couple-info">
+                        <h2 class="couple-name">Bùi Cẩm Nhung</h2>
+                        <div class="parents-info">
+                            <p class="parents-label">Ông Bà</p>
+                            <p class="parent-name">Bùi Văn Dũng</p>
+                            <p class="parent-name">Bùi Thị Tám</p>
+                        </div>
+                    </div>
+                </div>
+
+               
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ALBUM ẢNH -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">ALBUM ẢNH</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-index="0">
+                    <img src="assets/images/photo1.jpg" alt="Ảnh cưới 1">
+                </div>
+                <div class="gallery-item" data-index="1">
+                    <img src="assets/images/photo2.jpg" alt="Ảnh cưới 2">
+
+                </div>
+                <div class="gallery-item" data-index="2">
+                    <img src="assets/images/photo3.jpg" alt="Ảnh cưới 3">
+
+                </div>
+                <div class="gallery-item" data-index="3">
+                    <img src="assets/images/photo4.jpg" alt="Ảnh cưới 4">
+
+                </div>
+                <div class="gallery-item" data-index="4">
+                    <img src="assets/images/photo5.jpg" alt="Ảnh cưới 5">
+
+                </div>
+                <div class="gallery-item" data-index="5">
+                    <img src="assets/images/photo6.jpg" alt="Ảnh cưới 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+        <img src="" alt="Ảnh phóng to" id="lightbox-img">
+    </div>
+
+    <!-- 4. THÔNG TIN SỰ KIỆN -->
+    <section id="event" class="event-section">
+        <div class="container">
+            <div class="events-grid">
+                <!-- Nhà Gái -->
+                <div class="event-card">
+                    <img src="assets/images/photo1.jpg" alt="">
+                    <div class="event-header">
+                        <h3>Nhà gái</h3>
+                    </div>
+                    <div class="event-details">
+                        <p class="event-location">Thôn Đại Lợi, xã Đức Thọ, Tỉnh Hà Tĩnh</p>
+                        <p class="event-time">Vào lúc <strong>11:00</strong></p>
+                        <div class="event-date-box">
+                            <div class="day-name">Thứ Sáu</div>
+                            <div class="day-month">28/11</div>
+                            <div class="year-name">2025</div>
+                        </div>
+                        <div class="event-icons">
+                            <i class="fa-solid fa-map"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nhà Trai -->
+                <div class="event-card">
+                    <img src="assets/images/photo2.jpg" alt="">
+                    <div class="event-header">
+                        <h3>Nhà trai</h3>
+                    </div>
+                    <div class="event-details">
+                        <p class="event-location">Thôn Đại Lợi, xã Đức Thọ, Tỉnh Hà Tĩnh</p>
+                        <p class="event-time">Vào lúc <strong>11:00</strong></p>
+                        <div class="event-date-box">
+                            <div class="day-name">Thứ Sáu</div>
+                            <div class="day-month">28/11</div>
+                            <div class="year-name">2025</div>
+                        </div>
+                        <div class="event-icons">
+                            <i class="fa-solid fa-map"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SAVE THE DATE - COUNTDOWN -->
+    <section id="countdown" class="countdown-section">
+        <div class="container">
+            <h2 class="section-title">SAVE THE DATE</h2>
+            <div class="countdown-container">
+                <div class="countdown-image">
+                    <img src="assets/images/countdown-couple.jpg" alt="Cô dâu chú rể">
+                </div>
+                <div class="countdown-timer">
+                    <div class="time-box">
+                        <span class="time-number" id="days">00</span>
+                        <span class="time-label">Ngày</span>
+                    </div>
+                    <div class="time-box">
+                        <span class="time-number" id="hours">00</span>
+                        <span class="time-label">Giờ</span>
+                    </div>
+                    <div class="time-box">
+                        <span class="time-number" id="minutes">00</span>
+                        <span class="time-label">Phút</span>
+                    </div>
+                    <div class="time-box">
+                        <span class="time-number" id="seconds">00</span>
+                        <span class="time-label">Giây</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. XÁC NHẬN THAM DỰ -->
+    <section id="rsvp" class="rsvp-section">
+        <div class="container">
+            <h2 class="section-title">XÁC NHẬN THAM DỰ</h2>
+            <p class="section-subtitle">Hãy cho chúng tôi biết bạn sẽ đến tham dự nhé!</p>
+            <form id="rsvpForm" class="rsvp-form">
+                <div class="form-group radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="event" value="nha-gai" checked>
+                        <span>Nhà gái</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="event" value="nha-trai">
+                        <span>Nhà trai</span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="guestName" name="guestName" required placeholder="Tên Khách Mời">
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-check-circle"></i> Xác nhận
+                </button>
+            </form>
+            <div id="rsvpSuccess" class="form-success" style="display: none;">
+                <i class="fas fa-check-circle"></i>
+                <p>Cảm ơn bạn đã xác nhận tham dự!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. GỬI LỜI CHÚC -->
+    <section id="wishes" class="wishes-section">
+        <div class="container">
+            <h2 class="section-title">GỬI LỜI CHÚC ĐẾN CẶP ĐÔI</h2>
+            <div class="wishes-container">
+                <h3 class="wishes-subtitle">Gửi lời chúc</h3>
+                <form id="wishesForm" class="wishes-form">
+                    <div class="form-group">
+                        <input type="text" id="wishName" name="wishName" required placeholder="Tên của bạn">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="wishMessage" name="wishMessage" rows="4" required
+                            placeholder="Lời nhắn gửi"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Gửi lời chúc
+                    </button>
+                </form>
+                <div id="wishSuccess" class="form-success" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Lời chúc của bạn đã được gửi thành công!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. GỬI QUÀ MỪNG CƯỚI -->
+    <section id="gift" class="gift-section">
+        <div class="container">
+            <h2 class="section-title">GỬI QUÀ ĐẾN CÔ DÂU VÀ CHÚ RỂ</h2>
+            <p class="section-subtitle">Sự hiện diện của bạn là món quà quý giá nhất!</p>
+            <div class="gift-grid">
+                <!-- Chú Rể -->
+                <div class="gift-card">
+                    <h3>Mừng Cưới Chú Rể</h3>
+                    <div class="qr-code">
+                        <img src="assets/images/qr-groom.svg" alt="QR Code Chú Rể">
+                    </div>
+                    <div class="bank-info">
+                        <p class="bank-name"><i class="fas fa-university"></i> Vietcombank</p>
+                        <p class="account-name"><i class="fas fa-user"></i> TRAN XUAN HUY</p>
+                        <p class="account-number">
+                            <i class="fas fa-credit-card"></i>
+                            <span class="acc-num">1234567890</span>
+                            <button class="btn-copy" data-copy="1234567890">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cô Dâu -->
+                <div class="gift-card">
+                    <h3>Mừng Cưới Cô Dâu</h3>
+                    <div class="qr-code">
+                        <img src="assets/images/qr-bride.svg" alt="QR Code Cô Dâu">
+                    </div>
+                    <div class="bank-info">
+                        <p class="bank-name"><i class="fas fa-university"></i> Techcombank</p>
+                        <p class="account-name"><i class="fas fa-user"></i> BUI CAM NHUNG</p>
+                        <p class="account-number">
+                            <i class="fas fa-credit-card"></i>
+                            <span class="acc-num">0987654321</span>
+                            <button class="btn-copy" data-copy="0987654321">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. THANK YOU -->
+    <section id="thanks" class="thanks-section">
+        <div class="container">
+            <div class="thanks-content">
+                <h2>Thank you</h2>
+                <p>Cảm ơn bạn đã gửi lời chúc mừng đến đám cưới của chúng tôi</p>
+                <div class="share-section">
+                    <h4>Chia sẻ thiệp</h4>
+                    <div class="social-share">
+                        <a href="#" class="share-btn facebook" title="Chia sẻ lên Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="share-btn twitter" title="Chia sẻ lên Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="share-btn whatsapp" title="Chia sẻ qua WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="share-btn copy-link" title="Sao chép link">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 ROSÉ Wedding. All rights reserved.</p>
+        <p>Powered by <a href="https://thiepdientu.com.vn/" target="_blank">ROSÉ Wedding</a></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
